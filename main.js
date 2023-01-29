@@ -13,17 +13,16 @@ function adicionaLinha() {
     const inputNumero = document.getElementById('numero');
 
     let linha = `<tr>`;
-        linha += `<td>${inputNome.value}</td>`;
-        linha += `<td>${inputNumero.value}</td>`;
-        linha += `</tr>`
+    linha += `<td>${inputNome.value}</td>`;
+    linha += `<td>${inputNumero.value}</td>`;
+    linha += `</tr>`
 
-            linhas += linha;
+    linhas += linha;
 
 const corpoTabela = document.querySelector('tbody');
 corpoTabela.innerHTML = linhas;
 
 inputNome.value = '';
 inputNumero.value ='';
-
 };
 
